@@ -12,7 +12,7 @@
 ## Email: P.Cristofanelli@isac.cnr.it                                                                                    ##
 ## Phone number: (+39) 051 639 9597                                                                                      ##
 ##_______________________________________________________________________________________________________________________##
-## Script filename: MAAP_P20_1810.R                                                                                      ##
+## Script filename: MAAP_D20_1810.R                                                                                      ##
 ## Version Date: July 2019
 ## Jan. 17th, 2019: fixed correct numflag attribution for filter change episodes
 ## Jul. 31st, 2019: "days_ref" substituted with "dependent_col", i.e., the number of dependent data columns (in the header)
@@ -343,7 +343,7 @@ questo_mese             <-format(Sys.Date(), "%m")
 questo_mese_nome        <-format(Sys.Date(), "%B")
 questo_giorno           <-format(Sys.Date(), "%d")
 
-if (questo_mese == "01" & questo_giorno == "01")    { questo_anno == questo_anno-1 }                                                       
+if (questo_mese == "01" & questo_giorno == "01")    { questo_anno <- as.numeric(questo_anno)-1 }                                                       
 
 questo_capodanno        <-paste(questo_anno,"01","01",sep="-")
 questo_annomesegiorno   <-paste(questo_anno,questo_mese,questo_giorno,sep="")
@@ -780,6 +780,6 @@ for (d in reportday)
 ##                                          # END PART 3.0 #
 ###########################################################################################################################
 #                                                                                                                         #
-## End of MAAP_P20_1810.R                                                                                                 # 
+## End of MAAP_D20_1810.R                                                                                                 # 
 #                                                                                                                         # 
 ###################################################################################### Authors: L u C A, Davide ###########
