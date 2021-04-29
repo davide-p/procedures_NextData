@@ -1,0 +1,153 @@
+numflag;category;description
+999;M;Missing measurement, unspecified reason
+990;M;Precipitation not measured due to snow-fall. Needed for historic data, should not be needed for new data
+980;M;Missing due to calibration or zero/span check
+900;H;Hidden and invalidated by data originator
+899;M;Measurement undefined, unspecified reason
+890;M;Concentration in precipitation undefined, no precipitation
+799;I;Measurement missing (unspecified reason), data element contains estimated value
+798;V;Measurement missing (unspecified reason), data element contains estimated value. Considered valid.
+797;V;Data element taken from co-located instrument
+784;I;Low precipitation, concentration estimated
+783;M;Low precipitation, concentration unknown
+782;V;Low precipitation, concentration estimated
+781;V;Value below detection limit, data element contains detection limit
+780;V;Value below detection or quantification limit, data element contains estimated or measured value. Use of flag 147 is encouraged.
+771;V;Value above range, data element contains upper range limit
+770;V;Value above range, data element contains estimated value
+760;V;Value estimated by summing up the constituents measured
+750;M;H+ not measured in alkaline sample
+741;V;Non refractory AMS concentrations. Don't include compounds that volatalises above 600 deg C
+740;V;Probably biased gas/particle ratio
+701;I;Less accurate than usual, unspecified reason. (Used only with old data, for new data see groups 6 and 5)
+699;I;Mechanical problem, unspecified reason
+686;I;Invalid due to zero check. Used for Level 0.
+685;I;Invalid due to secondary standard gas measurement. Used for Level 0.
+684;I;Invalid due to zero/span check. Used for Level 0.
+683;I;Invalid due to calibration. Used for Level 0.
+682;I;Invalid due to calibration or zero/span check. Used for Level 0.
+681;I;Low data capture
+680;V;Undefined wind direction
+679;V;Unspecified meteorological condition
+678;V;Hurricane
+677;I;Icing or hoar frost in the intake
+676;V;station inside cloud (visibility < 1000 m)
+675;V;no visibility data available
+674;V;Icing or hoar frost in the intake, considered valid
+670;I;Incomplete data acquisition for multi-component data sets
+669;I;Moist or wet filter, invalid
+668;V;Moist or wet filter, valid
+666;I;Filter damaged, invalid
+665;V;Filter damaged, valid
+664;I;Instrument flow(s) too far off target value, considered invalid
+663;I;Too high sampling flow, data considered invalid
+662;V;Too high sampling flow, data considered valid
+660;V;Unspecified sampling anomaly, considered valid
+659;I;Unspecified sampling anomaly
+658;I;Too small air volume
+657;V;Precipitation collector overflow. Heavy snowfall/rain shower (squall)
+656;V;Wet-only collector failure, operated as bulk collector
+655;V;Estimated value created by averaging or splitting samples
+654;V;Sampling period longer than normal, considered representative. Observed values reported
+653;V;Sampling period shorter than normal, considered representative. Observed values reported
+652;V;Construction/acitivity nearby
+651;V;Agricultural activity nearby
+650;V;Precipitation collector failure
+649;V;Temporary power fail has affected sampler operation
+648;V;Snow sampler
+647;V;Fire/wood burning nearby
+646;I;Exceptional traffic nearby
+645;V;Exceptional traffic nearby
+644;V;Low instrument precision and/or calibration issues
+641;I;Aerosol filters installed incorrectly
+640;V;Instrument internal relative humidity above 40%
+635;I;Internal temperatures too far off target value, considered invalid
+632;V;Lid of polyurethane foam (PUF) sampler not closed
+630;V;POP concentration from the polyurethane foam (PUF) only
+599;I;Unspecified contamination or local influence
+593;I;Industrial contamination, considered invalid
+591;I;Agricultural contamination, considered invalid
+578;I;Large sea salt contribution (ratio between marine and excess sulphate is larger than 2.0). Used for old data only. For newer data use 451/450.
+568;I;Dust contamination, considered invalid
+567;I;Insect contamination, considered invalid
+566;I;Bird droppings, considered invalid
+565;I;Pollen and/or leaf contamination, considered invalid
+559;V;Unspecified contamination or local influence, but considered valid
+558;V;Dust contamination, but considered valid
+557;V;Insect contamination, but considered valid
+556;V;Bird droppings, but considered valid
+555;V;Pollen and/or leaf contamination, but considered valid
+549;I;Impure chemicals
+541;I;Gold trap passiviated by unknown compound
+540;I;Spectral interference in laboratory analysis
+534;I;Wrong coated denuder used
+533;I;Filters mixed up. Incorrect analysis
+532;V;Data less accurate than normal due to high field blank value
+531;V;Low recovery, analysis inaccurate
+530;I;Invalid due to too low or too high recovery
+521;V;Bactericide was added to sample for storage under warm climate. Considered valid
+499;V;Inconsistent with another unspecified measurement
+498;V;Gold trap inconsistency in mercury monitor
+478;I;Invalid due to inconsistency discovered through ion balance calculations
+477;I;Invalid due to inconsistency between measured and estimated conductivity
+476;V;Inconsistency discovered through ion balance calculations, but considerd valid
+475;V;Inconsistency between measured and estimated conductivity, but considerd valid
+471;I;Particulate mass concentration higher than parallell mass concentration measurement with higher cut off i.e.,PM1_mass > PM25_mass and PM25_mass > PM10_mass. Considered invalid.
+470;V;Particulate mass concentration higher than parallell mass concentration measurement with higher cut off i.e PM1_mass > PM25_mass and PM25_mass > PM10_mass
+460;I;Contamination suspected
+459;I;Extreme value, unspecified error
+458;V;Extremely high value, outside four times standard deviation in a lognormal distribution
+457;V;Extremely low value, outside four times standard deviation in a lognormal distribution
+456;I;Invalidated by data originator
+452;I;Invalid due to large uncertainty
+451;I;Invalid due to large sea salt contribution
+450;V;Considerable sea salt contribution, but considered valid
+440;V;Reconstructed or recalculated data
+420;V;Preliminary data
+410;V;Sahara dust event
+395;I;Data completeness less than 90%
+394;V;Data completeness less than 90%
+393;I;Data completeness less than 75%
+392;V;Data completeness less than 75%
+391;I;Data completeness less than 50%
+390;V;ata completeness less than 50%
+389;I;Data completeness less than 66%
+388;V;Data completeness less than 66%
+382;V;More than 75% of the measurements are below detection limit
+380;V;More than 50% of the measurements are below detection limit
+370;V;For monthly averages with samples partly in two months, the number of days in each month is used for weighing the sample
+299;V;Inconsistent with another unspecified measurement
+298;V;Gold trap inconsistency in mercury monitor
+278;I;Invalid due to inconsistency discovered through ion balance calculations
+277;I;Invalid due to inconsistency between measured and estimated conductivity
+276;V;Inconsistency discovered through ion balance calculations, but considered valid
+275;V;Inconsistency between measured and estimated conductivity, but considered valid
+260;I;Contamination suspected
+259;I;Unspecified error expected
+258;V;Extremely high value, outside four times standard deviation in a log-normal distribution
+257;V;Extremely low value, outside four times standard deviation in a log-normal distribution
+256;I;Invalidated by database co-ordinator
+251;I;Invalid due to large sea salt contribution
+250;V;Considerable sea salt contribution, but considered valid
+249;V;Apparent typing error corrected. Valid measurement
+248;V;Illegal flag was removed by the database co-ordinator. Lost flag information (used for historic data only).
+247;V;Overlapping sample interval was corrected by the database co-ordinator. Possible wrong sample time (used for historic data only)
+220;V;Preliminary data
+211;V;Irregular data checked and accepted by database co-ordinator. Valid measurement
+210;V;Episode data checked and accepted by database co-ordinator. Valid measurement
+191;V;Data not truncation corrected - Valid measurement
+190;V;Not corrected for cross-sensitivity to particle scattering
+189;V;Possible local contamination indicated by wind from contaminated sector (auto)
+188;V;Possible local contamination indicated by low wind speed (auto)
+187;V;Possible local contamination indicated by occurence of new particles (auto)
+186;V;Possible local contamination indicated by single scattering albedo (auto)
+185;V;Possible local contamination indicated by wind direction or velocity
+147;V;Below theoretical detection limit or formal Q/A limit, but a value has been measured and reported and is considered valid
+120;V;Sample reanalysed with similar results. Valid measurement
+111;V;Irregular data checked and accepted by data originator. Valid measurement
+110;V;Episode data checked and accepted by data originator. Valid measurement
+103;V;CV of replicate ALPHA samplers > 15 %. Valid measurement
+102;V;CV of replicate diffusion tubes > 30 %. Valid measurement
+101;V;Denuder capture efficiency < 75%. Valid measurement
+100;V;Checked by data originator. Valid measurement, overrides any invalid flags
+000;V;Valid measurement
