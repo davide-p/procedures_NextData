@@ -75,12 +75,12 @@ SCRIPT_DIR      = '../naitza/NEXTDATA/R_SCRIPT'
 ## Loading functions for numflags
 ## The "NXD_numflag_functions_180301.R" scripts assigns the numflag value to the Data set, according to EBAS Flag List
 ## (https://ebas-submit.nilu.no/Submit-Data/List-of-Data-flags)
-## The "NXD_EBAS_numflag_FullList_180103.txt" text file contains the EBAS Flag List, reporting codes, category and description
+## The "NXD_EBAS_numflag_FullList_210429.txt" text file contains the EBAS Flag List, reporting codes, category and description
 ## Please, do NOT apply any change to the following function settings, unless you need to specify a different table of flags
 #
 source(paste(SCRIPT_DIR,"NXD_numflag_functions_180301.R", sep="/"))
 
-tab_nf          <- read.table(file = paste(SCRIPT_DIR,"NXD_EBAS_numflag_FullList_180103.txt",sep="/"),
+tab_nf          <- read.table(file = paste(SCRIPT_DIR,"NXD_EBAS_numflag_FullList_210429.txt",sep="/"),
                               sep = ";", header = TRUE, quote = NULL)
 
 ##                                        # END PART 0.1 #
