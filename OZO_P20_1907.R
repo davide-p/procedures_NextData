@@ -719,24 +719,25 @@ CALIB_lsdata        <-list.files(path = CALIB_DIR, pattern = glob2rx(paste("*",O
                                  no.. = FALSE)
 
 CALIB_LISTA         <-as.character(CALIB_lsdata)
-
 df_CALIB_LISTA  <-data.frame(CALIB_LISTA)
+
 if(nrow(df_CALIB_LISTA) != 0)
 {
   names(df_CALIB_LISTA)[1]    <-"fileName"
-  df_CALIB_LISTA$calib_start  <-0
-  df_CALIB_LISTA$calib_end    <-0
+  #df_CALIB_LISTA$calib_start  <-0
+  #df_CALIB_LISTA$calib_end    <-0
+  
   for (c in df_CALIB_LISTA$fileName) 
   {
     CALIB_TABELLA             <-read.table(file=paste(CALIB_DIR,c,sep="/"),fill = TRUE, skip = 1)
     cTABELLA                  <-subset(CALIB_TABELLA[6],CALIB_TABELLA[6]>=0 & CALIB_TABELLA[6]<=365)
     
-    mindate                   <-as.numeric(format(trunc(min(cTABELLA[1])), 8),nsmall = 8)
-    maxdate                   <-as.numeric(format(trunc(max(cTABELLA[1])), 8),nsmall = 8)
+    mindate                   <-as.numeric(format(min(cTABELLA[1]), 8),nsmall = 8)
+    maxdate                   <-as.numeric(format(max(cTABELLA[1]), 8),nsmall = 8)
     #
     # Flagging O3 when calibration occurs
     #
-    TABELLA$numflag[trunc(TABELLA$start_time) >= as.numeric(mindate) && trunc(TABELLA$end_time)<= as.numeric(maxdate)] <- 0.68200000    
+    TABELLA$numflag[TABELLA$start_time >= as.numeric(mindate) & TABELLA$start_time <= as.numeric(maxdate) + 0.00069444] <- 0.68200000    
   } 
 }
 #
